@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header{
+    background-color:blue;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main{
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+input,textarea,button{
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover{
+    background:greenyellow;
+    color: black;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
+}
+
+article{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    background: skyblue;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .pagination button {
+    padding: 0.5rem 1rem;
+  }
+  
+  .pagination button.active {
+    background: #007BFF;
+    color: #fff;
+  }
